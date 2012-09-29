@@ -1,0 +1,14 @@
+name: NuVote
+version: ${project.version}
+description: ${project.description}
+
+author: Stephen McGregor
+website: ${project.url}
+main: nu.nerd.NuVote.NuVote
+commands:
+  vote:
+    description: Vote for your opinion!
+    permission: nuvote.vote
+    default: true
+    usage: |
+           /vote <id> - Vote for an option

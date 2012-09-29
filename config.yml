@@ -1,0 +1,6 @@
+questions:
+  list:
+  - user
+  - mod
+  - admin
+  broadcast: Vote now!
