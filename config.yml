@@ -1,6 +1,10 @@
 questions:
   list:
-  - user
-  - mod
-  - admin
-  broadcast: Vote now!
+  - This is an item!
+  - Item 2
+  - Item 3
+  - This is a variable length list of options!
+  boradcast: Vote now, use the /vote <id> command!
+vote:
+  user1: '1'
+  user2: '2'
