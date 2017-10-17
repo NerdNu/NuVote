@@ -1,6 +1,7 @@
-questions:
-  list:
-  - user
-  - mod
-  - admin
-  broadcast: Vote now!
+allowed-votes: 1
+question: "Which is best"
+choices:
+  1: "The first choice"
+  2: "The second choice"
+  3: "The third choice"
+  foo: "Something else"

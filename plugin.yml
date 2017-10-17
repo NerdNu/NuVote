@@ -11,4 +11,8 @@ commands:
     permission: nuvote.vote
     default: true
     usage: |
-           /vote <id> - Vote for an option
+           /vote <choice> [<choice>...] - Vote for an option
+  vote-reload:
+    description: Reload NuVote configuration
+    permission: nuvote.admin
+    default: op
