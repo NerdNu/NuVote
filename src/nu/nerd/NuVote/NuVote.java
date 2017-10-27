@@ -63,7 +63,7 @@ public class NuVote extends JavaPlugin {
     }
 
     private List<String> getVotes(Player player) {
-        return getConfig().getStringList("vote." + player.getUniqueId().toString());
+        return getConfig().getStringList("vote." + player.getUniqueId().toString() + ".votes");
     }
 
     private void setVotes(Player player, List<String> choices) {
@@ -71,7 +71,8 @@ public class NuVote extends JavaPlugin {
             return;
         }
 
-        getConfig().set("vote." + player.getUniqueId().toString(), choices);
+        getConfig().set("vote." + player.getUniqueId().toString() + ".name", player.getName());
+        getConfig().set("vote." + player.getUniqueId().toString() + ".votes", choices);
         saveConfig();
         player.sendMessage(PRIMARY + "Vote recorded!");
     }
