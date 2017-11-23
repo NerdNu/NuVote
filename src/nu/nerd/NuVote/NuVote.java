@@ -153,7 +153,9 @@ public class NuVote extends JavaPlugin {
         StringBuilder usage = new StringBuilder("Usage: ").append(SECONDARY).append("/vote");
         for (int i = 0; i < allowedVotes; i++) {
             usage.append(" <");
-            if (i < ORDINALS.length) {
+            if (allowedVotes == 1) {
+                usage.append("choice");
+            } else if (i < ORDINALS.length) {
                 usage.append(ORDINALS[i]);
             } else {
                 usage.append("choice").append(i + 1);
